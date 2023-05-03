@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  list-style: none;
+}
+.header__link {
+  list-style: none;
+  margin: 20px;
+  text-decoration: none;
+  color: #24473f;
+}
+.header__link:hover {
+  background-color: #8AC926;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+/*--------------------------------------------------------*/
+/*hero section*/
+.hero {
+  background-color: #60AB9A;
+}
+.hero__title {
+  text-align: center;
+  padding: 60px;
+  font-family: libre baskerville;
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */

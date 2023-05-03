@@ -1,0 +1,50 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+/*----------------------------------------------------*/
+$primary-color: #60AB9A;
+$special-color: #8AC926;
+$normal-text-color: #24473f;
+$special-font: libre baskerville;
+$font-size-h1: 50px;
+$spacer: 20px;
+
+/*----------------------------------------------------*/
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__menu {
+        display: flex;
+        list-style: none;
+    }
+    &__link {
+        list-style: none;
+        margin: $spacer;
+        text-decoration: none;
+        color: $normal-text-color;
+        &:hover {
+                background-color: $special-color;
+                border-radius: 50px;
+                padding: $spacer / 2;
+            }}
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------*/
+/*hero section*/
+.hero {
+    background-color: $primary-color;
+    &__title {
+        text-align: center;
+        padding: $spacer *3;
+        font-family: $special-font;
+        font-size: $font-size-h1;
+    }
+}
+
+
