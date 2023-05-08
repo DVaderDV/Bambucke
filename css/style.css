@@ -235,9 +235,9 @@ a:active {
 }
 
 /*------------------------------------------------*/
-/*containers*/
+/*grid*/
 @media (min-width: 640px) {
-  .containers {
+  .grid {
     /*display: flex;
     justify-content: space-between;*/
     display: grid;
