@@ -7,9 +7,9 @@ $normal-text-color: #24473f;
 $normal-font: libre baskerville;
 $button-color: rgb(253, 236, 139);
 $special-font: kaushan script;
-$font-size-special: 80px;
-$font-size-h1: $font-size-special / 2;
-$font-size-h2: $font-size-special / 3;
+$font-size-special: 20px;
+$font-size-h1: 60px;
+$font-size-h2: $font-size-h1 / 2;
 $spacer: 20px;
 $border-size: 3px;
 $border-title: $special-color $border-size solid;
@@ -23,7 +23,6 @@ $loga-size: 100px;
 /*obecně*/
 html {
     font-family: $normal-font;
-    font-size: 16px;
     color: $normal-text-color;
 }
 a {
@@ -104,7 +103,7 @@ a {
     &__text {
         font-family: $special-font;
         color: $primary-color;
-        font-size: $font-size-h1;
+        font-size: $font-size-h2;
         grid-row: 1 / 2;
     }
     &__img {
@@ -133,7 +132,7 @@ a {
             align-items: center;
         }
     &__headtitle {
-        font-size: $font-size-special;
+        font-size: $font-size-h1;
         font-family: $special-font;
         color: $special-color;
         border-bottom: $border-title;
@@ -187,7 +186,7 @@ a {
         }
     }
     &__titlefirst {
-        font-size: $font-size-h2;
+        font-size: $font-size-special;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         @media (min-width: 1200px) {
@@ -196,7 +195,7 @@ a {
         }
     }
     &__titlesecond {
-        font-size: $font-size-h2;
+        font-size: $font-size-special;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         @media (min-width: 1200px) {
@@ -205,7 +204,7 @@ a {
         }
     }
     &__titlethird {
-        font-size: $font-size-h2;
+        font-size: $font-size-special;
         grid-column: 1 / 2;
         grid-row: 4 / 5;
         @media (min-width: 1200px) {
@@ -227,8 +226,6 @@ a {
 .grid {
        
     @media (min-width: 640px){
-        /*display: flex;
-        justify-content: space-between;*/
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -261,6 +258,7 @@ a {
     &__title {
         font-family: $special-font;
         color: $primary-color;
+        font-size: $font-size-h2;
     }
     &__img {
         & img {
