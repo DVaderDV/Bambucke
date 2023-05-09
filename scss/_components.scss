@@ -1,0 +1,25 @@
+@use 'colors';
+@use 'fonts';
+@use 'size';
+
+//-----------------------------------
+.button {
+    display: inline-block;
+    background-color: colors.$button-color;
+    border-radius: 50px;
+    font-size: fonts.$button-font-size;
+    padding: size.$spacer / 2;
+    text-align: center;
+    &__link {
+        color: colors.$normal-text-color;
+        font-weight: bold;
+        font-family: fonts.$normal-font;
+        text-decoration: none;
+    }
+    &:active,
+    &:hover {
+        background-color: colors.$special-color;
+        border-radius: 50px;
+        padding: size.$spacer / 2;
+    }
+    }

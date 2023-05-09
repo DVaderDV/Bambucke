@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="/images/loga/farm.inc logo.png" alt="">
-        </div>
-    
-            <ul class="header__menu">
-                <li><a class="header__link" href="page1">nazev</a></li>
-                <li><a class="header__link" href="page2">nazev</a></li>
-                <li><a class="header__link" href="page3">nazev</a></li>
-                <li><a class="header__link" href="page4">nazev</a></li>
-                <li><a class="header__link" href="page5">nazev</a></li>
-                <li><a class="header__link" href="page6">nazev</a></li>
-            
-            </ul>
-    </header>
-    
+---
+layout: moje-sablona.njk
+---
     <section class="hero">
        
         <div class="hero__title">
@@ -36,27 +9,27 @@
 
     </section>
     <div class="content">
-        <article class="article">
-            <div class="article__text">
+        <div class="about">
+            <div class="about__text">
                 <p>Jsme malá rodinná společnost, která českým výrobcům dodává kvalitní přírodní suroviny.</p> 
             </div>
-            <div class="article__img">
-                <img src="/images/fancy/article.png" alt="">
+            <div class="about__img">
+               <img src="/images/fancy/article.png" alt="">
             </div>
-        </article>
+        </div>
     <section class="main">
         <h1 class="main__headtitle">Naše top produkty:</h1>
-        <h2 class="main__titlefirst"><a href="#">Bio bambucké máslo</a></h2>
-        <div class="main__imgfirst">
-            <img src="/images/produkty/BIO_bambucke_nerafin.png" alt="">
+        <h2 class="main__title title-first">Bio bambucké máslo</h2>
+        <div class="main__img img-first">
+           <a href="#"> <img  src="/images/produkty/BIO_bambucke_nerafin.png" alt=""></a>
         </div>
-        <h2 class="main__titlesecond"><a href="#">Bio kakaové máslo</a></h2>
-        <div class="main__imgsecond">
-            <img src="/images/produkty/BIO_kakaove.png" alt="">
+        <h2 class="main__title title-second">Bio kakaové máslo</h2>
+        <div class="main__img img-second">
+           <a href="#"><img src="/images/produkty/BIO_kakaove.png" alt=""></a> 
         </div>
-        <h2 class="main__titlethird"> <a href="#">Černé mýdlo</a></h2>
-        <div class="main__imgthird">
-            <img src="/images/produkty/mydlo_cerne.png" alt="">
+        <h2 class="main__title title-third">Černé mýdlo</h2>
+        <div class="main__img img-third">
+           <a href=""> <img src="/images/produkty/mydlo_cerne.png" alt=""></a>
         </div>
         <div class="button" >
             <a class="button__link" href="#">Kompletní nabídka</a> 
@@ -137,17 +110,3 @@
     </section>
    
    </div>  
-   <footer class="footer">
-    <div class="footer__icon">
-        <img src="/images/ikony/Fb.png" alt="">
-    </div>
-    <div class="footer__icon">
-        <img src="/images/ikony/Ig.png" alt="">
-    </div>
-    <div class="footer__icon">
-        <img src="/images/ikony/linkedin.png" alt="">
-    </div>
-
-   </footer>
-</body>
-</html>

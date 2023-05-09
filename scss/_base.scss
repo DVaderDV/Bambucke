@@ -1,0 +1,15 @@
+@use 'colors';
+@use 'fonts';
+
+//-----------------------------------------------------------
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    font-family: fonts.$normal-font;
+    color: colors.$normal-text-color;
+}
+.content {
+    max-width: 1400px;
+    margin: auto;
+}
