@@ -5,21 +5,24 @@
 //-----------------------------------
 .button {
     display: inline-block;
-    background-color: colors.$button-color;
-    border-radius: 50px;
-    font-size: fonts.$button-font-size;
-    padding: size.$spacer / 2;
     text-align: center;
     &__link {
         color: colors.$normal-text-color;
+        font-size: fonts.$button-font-size;
         font-weight: bold;
-        font-family: fonts.$normal-font;
         text-decoration: none;
-    }
+        background-color: colors.$button-color;
+        border-radius: 50px;
+        padding: size.$spacer /2;
     &:active,
     &:hover {
         background-color: colors.$special-color;
         border-radius: 50px;
         padding: size.$spacer / 2;
+        }
+        }
+    &:active,
+    &:hover {
+        transform: scale(1.2);
     }
     }
