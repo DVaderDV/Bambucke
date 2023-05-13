@@ -108,7 +108,6 @@ body {
 /*------------------------------------------------*/
 /*main section*/
 .main {
-  margin: 20px;
   text-align: center;
   position: relative;
 }
@@ -127,6 +126,7 @@ body {
   font-size: 60px;
   font-family: kaushan script;
   color: #8AC926;
+  line-height: 80px;
 }
 @media (min-width: 1200px) {
   .main__headtitle::after {
@@ -232,6 +232,7 @@ body {
   }
 }
 .article-about__title {
+  line-height: 80px;
   font-size: 60px;
   font-family: kaushan script;
   color: #8AC926;
@@ -275,7 +276,6 @@ body {
 }
 
 .container-help {
-  padding: 20px;
   margin: 20px;
   display: inline-block;
   text-align: center;

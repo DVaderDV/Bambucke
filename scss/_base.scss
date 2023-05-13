@@ -9,7 +9,7 @@ html { box-sizing: border-box; }
 body {
     font-family: fonts.$normal-font;
     color: colors.$normal-text-color;
-    line-height: size.$line-height-normal-text;
+    line-height: fonts.$line-height-normal-text;
 }
 .content {
     max-width: 1400px;
