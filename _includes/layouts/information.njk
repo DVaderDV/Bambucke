@@ -11,23 +11,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="background">
     <header class="header">
         <div class="header__logo">
             <img src="/images/loga/farm.inc logo.png" alt="">
         </div>
     
-            <ul class="header__menu">
-                <li><a class="header__link" href="page1">ÚVOD</a></li>
-                <li><a class="header__link" href="page2">NABÍDKA</a></li>
-                <li><a class="header__link" href="page3">INFORMACE</a></li>
-                <li><a class="header__link" href="page4">KONTAKT</a></li>
-                <li><a class="header__link" href="page5">nazev</a></li>
-                <li><a class="header__link" href="page6">nazev</a></li>
-            
-            </ul>
+        {% include 'partials/menu.njk' %}
+        
     </header>
+    <div class="content">
     {{ content | safe }}
+  </div>
     <footer class="footer">
         <div class="footer__icon">
            <a href="https://www.facebook.com/zdravizafriky/?locale=cs_CZ"><img src="/images/ikony/Fb.png" alt=""></a> 

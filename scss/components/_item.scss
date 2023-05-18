@@ -1,0 +1,23 @@
+@use '../base/colors';
+@use '../base/size';
+
+.item {
+    background-color: white;
+    
+    &:hover {
+        transform: scale(1.2);
+    }
+    @media (min-width:1200px) {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 1px 1px 3px rgb(212, 212, 212);
+        border-radius: 5px;
+    }
+    &__img {
+        & img {
+            max-height: size.$imgproduct-size;
+            max-width: size.$imgproduct-size;
+        }
+         }
+}

@@ -1,12 +1,13 @@
-@use 'colors';
-@use 'fonts';
-@use 'size';
+@use '../base/colors';
+@use '../base/fonts';
+@use '../base/size';
+
 
 //-----------------------------------
 .button {
     display: inline-block;
     text-align: center;
-    margin: size.$spacer;
+    margin: size.$spacer *2;
     &__link {
         color: colors.$normal-text-color;
         font-size: fonts.$button-font-size;

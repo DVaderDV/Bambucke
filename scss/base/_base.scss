@@ -15,3 +15,20 @@ body {
     max-width: 1400px;
     margin: auto;
 }
+
+h1 {
+    font-size: fonts.$font-size-h1;
+    font-family: fonts.$special-font;
+    color: colors.$special-color;
+    line-height: fonts.$line-height-h1;
+}
+
+h2 {
+    font-family: fonts.$special-font;
+    color: colors.$primary-color;
+    font-size: fonts.$font-size-h2;
+}
+
+h3 {
+    font-size: fonts.$font-size-special;
+}

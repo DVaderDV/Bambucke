@@ -1,0 +1,7 @@
+@use '../base/size';
+
+.background {
+    background-image: url('/images/pozadi/shea.png');
+    background-attachment: fixed;
+    padding: size.$spacer;
+}
