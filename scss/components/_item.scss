@@ -1,16 +1,19 @@
 @use '../base/colors';
 @use '../base/size';
+@use '../base/border';
+
 
 .item {
-    background-color: white;
-    
+    background-color: colors.$secondary-color;
+    border: border.$border-text;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     &:hover {
         transform: scale(1.2);
     }
     @media (min-width:1200px) {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        
         box-shadow: 1px 1px 3px rgb(212, 212, 212);
         border-radius: 5px;
     }
@@ -18,6 +21,7 @@
         & img {
             max-height: size.$imgproduct-size;
             max-width: size.$imgproduct-size;
+            margin-top: size.$spacer;
         }
          }
 }

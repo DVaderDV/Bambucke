@@ -42,7 +42,7 @@
     background-image: url("/images/hero.png");
     background-size: cover;
     text-align: center;
-    margin: size.$spacer;
+    margin: 0;
     &__title {
         & img {
             width: 250px;
@@ -70,37 +70,7 @@
 }
 /*------------------------------------------------*/
 /*main section*/
-.product-box {
-        text-align: center;
-        position: relative;
-        margin: size.$spacer;
-        @media (min-width: 1200px) {
-            display: grid;
-            gap: size.$spacer*2;
-            grid-template-columns: repeat(4, minmax(100px,300px));
-            grid-template-rows: repeat(3, auto);
-            justify-content: center;
-        }
-    &__headtitle {
-        @media (min-width:1200px) {
-            &::after {
-                content: " ";
-                display: block;
-                width: 700px;
-                height: 5px;
-                background-image:linear-gradient(to left, colors.$primary-color, colors.$special-color);
-                position: absolute;
-                left: 10px;
-                top: 140px;
-                }
-        }
-        @media (min-width: 1200px) {
-            grid-row: 1;
-            grid-column: 1 / -1;
-            justify-self: start;
-        }
-    }
-    }
+
     
     .button {
         @media (min-width: 1200px) {

@@ -7,7 +7,7 @@
 .button {
     display: inline-block;
     text-align: center;
-    margin: size.$spacer *2;
+    margin: size.$spacer;
     &__link {
         color: colors.$normal-text-color;
         font-size: fonts.$button-font-size;

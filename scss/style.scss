@@ -9,8 +9,10 @@
 @use 'pages/offer';
 
 @use 'components/button';
-@use 'components/item';
+@use 'components/item'; //item from product-box
 
+@use 'layouts/product-box'; //layout for items
+@use 'layouts/grid';
 
 
 

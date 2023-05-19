@@ -1,0 +1,43 @@
+@use '../base/colors';
+@use '../base/size';
+@use '../base/fonts';
+
+.product-box {
+    position: relative;
+    text-align: center;
+    margin: size.$spacer;
+    display: grid;
+    grid-template-columns: minmax(1fr, 400px);
+    grid-template-rows: auto;
+    justify-content: center;
+    @media (min-width: 1200px) {
+        display: grid;
+        gap: size.$spacer*2;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+    }
+&__headtitle {
+    @media (min-width:1200px) {
+        &::after {
+            content: " ";
+            display: block;
+            width: 700px;
+            height: 5px;
+            background-image:linear-gradient(to left, colors.$primary-color, colors.$special-color);
+            position: absolute;
+            left: 10px;
+            top: 140px;
+            }
+    }
+    @media (min-width: 1200px) {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        justify-self: start;
+    }
+}
+&__link {
+    text-decoration: none;
+    color: colors.$normal-text-color;
+}
+}
