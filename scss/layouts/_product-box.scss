@@ -8,8 +8,9 @@
     margin: size.$spacer;
     display: grid;
     grid-template-columns: minmax(1fr, 400px);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(8,auto);
     justify-content: center;
+    gap: size.$spacer*2;
     @media (min-width: 1200px) {
         display: grid;
         gap: size.$spacer*2;
@@ -39,5 +40,12 @@
 &__link {
     text-decoration: none;
     color: colors.$normal-text-color;
+}
+.button {
+   margin: size.$spacer;
+    @media (min-width: 1200px) {
+        grid-row: 3;
+        grid-column: 4 / -1;
+    }
 }
 }
