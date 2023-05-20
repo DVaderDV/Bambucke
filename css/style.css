@@ -359,6 +359,10 @@ h3 {
   }
 }
 
+.information {
+  border: #8AC926 10px double;
+}
+
 .article {
   position: relative;
   display: grid;
@@ -399,18 +403,22 @@ h3 {
 }
 .article__title--right {
   background-color: rgba(44, 65, 44, 0.8);
-  grid-column: 2/-1;
-  grid-row: 1/-1;
 }
-.article__title--right::after {
-  content: " ";
-  display: block;
-  width: 5px;
-  height: 100px;
-  background-image: linear-gradient(to right, #60AB9A, #8AC926);
-  position: absolute;
-  right: 600px;
-  top: 80px;
+@media (min-width: 1200px) {
+  .article__title--right {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+  }
+  .article__title--right::after {
+    content: " ";
+    display: block;
+    width: 5px;
+    height: 100px;
+    background-image: linear-gradient(to right, #60AB9A, #8AC926);
+    position: absolute;
+    right: 600px;
+    top: 80px;
+  }
 }
 .article__title--left::after {
   content: " ";

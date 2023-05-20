@@ -1,5 +1,10 @@
 @use '../base/colors';
 @use '../base/size';
+@use '../base/border';
+
+.information {
+    border: border.$border-information;
+}
 .article {
         position: relative;
         display: grid;
@@ -35,8 +40,10 @@
         padding: size.$spacer;
         &--right{
             background-color: colors.$background-article-info;
-            grid-column: 2/-1;
-            grid-row: 1/-1;
+            @media (min-width:1200px) {
+                grid-column: 2/-1;
+                grid-row: 1/-1;
+            
             &::after {
                 content: " ";
                 display: block;
@@ -47,7 +54,7 @@
                 right: 600px;
                 top: 80px;
             }
-        }
+        }}
         &--left{
             &::after {
                 content: " ";
