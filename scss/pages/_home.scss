@@ -72,24 +72,21 @@
 /*main section*/
 
     
-    .button {
-        @media (min-width: 1200px) {
-            grid-row: 3;
-            grid-column: 4 / -1;
-        }
-    }
+   
 /*------------------------------------------------*/
 /*article*/
 .article-about {
-    background-image: linear-gradient(to right, white, rgb(238, 252, 246));
-    /*border: border.$border-text;*/
-    text-align: center;
-    position: relative;
-    padding: size.$spacer*2;
-    @media (min-width:1200px) {
+    @media (min-width: 640px) {
         display: grid;
         grid-template-columns: 400px auto;
         grid-template-rows: auto auto;
+        background-image: url(/images/fancy/onas.png);
+        background-size: cover;
+        border: border.$border-text;
+        text-align: center;
+        position: relative;
+        padding: size.$spacer*2;
+        color: white;
     }
     &__title {
         &::after {
@@ -113,38 +110,16 @@
     }
     &__text {
         margin: size.$spacer;
+        padding: size.$spacer;
         text-align: end;
-        @media (max-width:1200px) {
+        background-color: colors.$background-color-text;
+        @media (max-width:640px) {
             display: none;
-        }
-         @media (min-width:1200px) {
-            grid-column: 2/-1;
-            grid-row: 2/-1;
         }
         }
     }
 
-.container-help {
-    margin: size.$spacer;
-    display: inline-block;
-    text-align: center;
-    @media (min-width:1200px) {
-        grid-column: 1/2;
-        grid-row: 1/-1;
-    }
-    &__icon {
-        padding: size.$spacer;
-        & img {
-        width: size.$icon-size;
-        height: size.$icon-size;
-    }
-    }
-    &__box {
-        display: flex;
-        align-items: center;
-    }
-   
-}
+
 
 /*--------------------------------------------------*/
 /*grid-logo*/
@@ -176,22 +151,5 @@
         align-items: center;
         gap: size.$spacer;
         justify-content: center;
-    }
-}
-
-
-/*---------------------------------------------------*/
-/*footer*/
-.footer {
-    display: flex;
-    gap: size.$spacer;
-    justify-content: center;
-    background-color: colors.$primary-color;
-    padding: size.$spacer;
-    &__icon {
-        & img {
-        width: size.$icon-size / 2;
-        height: size.$icon-size / 2;
-    }
     }
 }

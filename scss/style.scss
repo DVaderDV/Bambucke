@@ -3,9 +3,9 @@
 @use 'base/fonts';
 @use 'base/size';
 @use 'base/border';
+@use 'base/background';
 
 @use 'pages/home';
-@use 'pages/information';
 @use 'pages/offer';
 
 @use 'components/button';
@@ -13,6 +13,8 @@
 
 @use 'layouts/product-box'; //layout for items
 @use 'layouts/grid';
+@use 'layouts/footer';
+@use 'layouts/article';
 
 
 

@@ -1,0 +1,64 @@
+@use '../base/colors';
+@use '../base/size';
+.article {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        @media (min-width:1200px) {
+            grid-template-columns: 1fr 600px;
+            grid-template-rows: auto auto;
+        }
+        
+    &__origin{
+        background-color: colors.$background-article-info;
+        //background-image: url('/images/fancy/cerne_mydlo.png');
+        background-size: cover;
+    }    
+    &__types{
+        background-image: url('/images/fancy/jake.png');
+        background-size: cover;
+    }
+    &__text{
+        color: white;
+        background-color: colors.$background-article-info;
+        padding: size.$spacer;
+    &--left{
+        @media (min-width:1200px) {
+         grid-column: 1/2;
+         grid-row: 1/-1;
+    }}
+    &--right{
+        @media (min-width:1200px) {
+        grid-column: 2/-1;
+    }}}
+    &__title{
+        padding: size.$spacer;
+        &--right{
+            background-color: colors.$background-article-info;
+            grid-column: 2/-1;
+            grid-row: 1/-1;
+            &::after {
+                content: " ";
+                display: block;
+                width: 5px;
+                height: 100px;
+                background-image:linear-gradient(to right, colors.$primary-color, colors.$special-color);
+                position: absolute;
+                right: 600px;
+                top: 80px;
+            }
+        }
+        &--left{
+            &::after {
+                content: " ";
+                display: block;
+                width: 5px;
+                height: 100px;
+                background-image:linear-gradient(to right, colors.$primary-color, colors.$special-color);
+                position: absolute;
+                left: 100px;
+                top: 160px;
+        }
+    }
+}}
+    

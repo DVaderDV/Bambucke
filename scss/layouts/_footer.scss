@@ -1,0 +1,38 @@
+@use '../base/colors';
+@use '../base/size';
+
+.footer {
+    background-color: colors.$primary-color;
+    color: white;
+    &__grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    @media (min-width:1200px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        gap: size.$spacer;
+        align-items: center;
+    }}
+    
+    &__icon {
+        & img {
+        width: size.$icon-size / 2;
+        height: size.$icon-size / 2;
+    }
+    }
+    &__item {
+        display: flex;
+        gap: size.$spacer;
+        @media (min-width:1200px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }}
+    &__list {
+        @media (min-width:1200px) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    }
+}
+
