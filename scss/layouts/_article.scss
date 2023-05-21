@@ -1,6 +1,7 @@
 @use '../base/colors';
 @use '../base/size';
 @use '../base/border';
+@use '../base/base';
 
 .information {
     border: border.$border-information;
@@ -16,15 +17,13 @@
         
     &__origin{
         background-color: colors.$background-article-info;
-        //background-image: url('/images/fancy/cerne_mydlo.png');
-        background-size: cover;
     }    
     &__types{
         background-image: url('/images/fancy/jake.png');
         background-size: cover;
     }
     &__text{
-        color: white;
+        color: colors.$secondary-color;
         background-color: colors.$background-article-info;
         padding: size.$spacer;
     &--left{
@@ -40,6 +39,8 @@
         padding: size.$spacer;
         &--right{
             background-color: colors.$background-article-info;
+            & h1{
+            animation: move-fromright 3s;}
             @media (min-width:1200px) {
                 grid-column: 2/-1;
                 grid-row: 1/-1;
@@ -56,6 +57,10 @@
             }
         }}
         &--left{
+            & h1 {
+                animation: move-fromleft 3s;
+            }
+            @media (min-width:1200px) {
             &::after {
                 content: " ";
                 display: block;
@@ -63,9 +68,9 @@
                 height: 100px;
                 background-image:linear-gradient(to right, colors.$primary-color, colors.$special-color);
                 position: absolute;
-                left: 100px;
-                top: 160px;
+                left: 510px;
+                top: 60px;
         }
     }
-}}
+}}}
     

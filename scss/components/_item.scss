@@ -5,12 +5,12 @@
 
 .item {
     background-color: colors.$secondary-color;
-   // border: border.$border-text;
     height: 100%;
     width: 100%;
     object-fit: cover;
     box-shadow: 2px 2px 5px rgb(212, 212, 212);
     border-radius: 10px;
+    padding: size.$spacer;
    
     &:hover {
         transform: scale(1.2);

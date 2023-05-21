@@ -1,6 +1,7 @@
 ---
 layout: layouts/sablona_hero.njk
 ---
+<div class="form-field">
 <form method="get" action="">
     <label for="id">Jméno a přijmení</label>
     <input type="text"
@@ -8,29 +9,33 @@ layout: layouts/sablona_hero.njk
     id="Jméno a přijmení"
     required
     >
-
+</div>
+<div class="form-field">
 <label for="id">Email</label>
 <input type="email"
 name="email"
 id="email"
 required
 >
-
+</div>
+<div class="form-field">
 <label for="id">Zpráva</label>
-<input type="text"
-name="Zpráva"
-id="Zpráva"
-required
->
+<textarea name="Zpráva" id="Zpráva" cols="90" rows="10">
 
-<input type="button"
+</textarea>
+</div>
+
+<div class="form-field">
+<button class="button"
+type="submit"
 name="odeslat"
 id="odeslat"
-value="Odeslat žádost o ceník"
->
-
+> Odeslat
+</button>
+</div>
     
 </form>
+
 
 <div class="contacts">
 <p> Pokud chcete mluvit přímo s námi, neváhejte nás kontaktovat.

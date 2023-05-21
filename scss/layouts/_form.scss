@@ -1,0 +1,16 @@
+@use '../base/size';
+@use '../base/colors';
+@use '../components/button';
+@use '../base/fonts';
+
+label {
+    display: block;
+    font-family: fonts.$special-font;
+    font-size: fonts.$font-size-h2;
+    color: colors.$special-color;
+    margin-top: size.$spacer;
+}
+
+.form {
+    margin: size.$spacer;
+}

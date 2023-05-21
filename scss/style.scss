@@ -7,14 +7,17 @@
 
 @use 'pages/home';
 @use 'pages/offer';
+@use 'pages/detail';
 
 @use 'components/button';
 @use 'components/item'; //item from product-box
 
-@use 'layouts/product-box'; //layout for items
-@use 'layouts/grid';
+@use 'layouts/product-box'; //layout for items home page
+@use 'layouts/grid'; //grid-products offer page
 @use 'layouts/footer';
-@use 'layouts/article';
+@use 'layouts/article';//information page
+@use 'layouts/form'; //form contact page
+@use 'layouts/header';
 
 
 

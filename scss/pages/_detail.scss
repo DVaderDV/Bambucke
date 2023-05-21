@@ -1,0 +1,8 @@
+.glide {
+    &__slide{
+        & img{
+            width: 500px;
+            height: auto;
+        }
+    }
+}

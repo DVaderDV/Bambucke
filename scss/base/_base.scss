@@ -3,6 +3,15 @@
 @use 'size';
 
 //-----------------------------------------------------------
+@keyframes move-fromleft {
+    from {transform:translate(-100%,0)}
+    to {transform:translate(0,0)}
+}
+@keyframes move-fromright {
+    from {transform: translate(100%,0);}
+    to {transform: translate(0.0);}
+}
+
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 

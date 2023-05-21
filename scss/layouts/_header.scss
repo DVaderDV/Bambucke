@@ -1,0 +1,33 @@
+@use '../base/colors';
+@use '../base/base';
+@use '../base/fonts';
+@use '../base/size';
+@use '../base/border';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        & img {
+            width: size.$icon-size;
+            height: size.$icon-size;
+        }
+    }
+    &__menu {
+        display: flex;
+        list-style: none;
+        border-bottom: border.$border-title;
+    }
+    &__link {
+        margin: size.$spacer;
+        text-decoration: none;
+        color: colors.$normal-text-color;
+        font-family: fonts.$normal-font;
+        text-decoration: none;
+        &:hover,
+        &:active {
+                background-color: colors.$special-color;
+                border-radius: 50px;
+                padding: size.$spacer / 2;
+            }}
+}
