@@ -1,8 +1,10 @@
 ---
 layout: layouts/sablona_hero.njk
 ---
-<div class="form-field">
+<div class="grid-contact">
+<div class="grid-contact__form">
 <form method="get" action="">
+    <div class="form-field">
     <label for="id">Jméno a přijmení</label>
     <input type="text"
     name="Jméno a přijmení"
@@ -20,33 +22,35 @@ required
 </div>
 <div class="form-field">
 <label for="id">Zpráva</label>
-<textarea name="Zpráva" id="Zpráva" cols="90" rows="10">
+<textarea name="Zpráva" id="Zpráva" cols="20" rows="10">
 
 </textarea>
 </div>
 
 <div class="form-field">
-<button class="button"
+<input class="form-field__button"
 type="submit"
 name="odeslat"
 id="odeslat"
-> Odeslat
-</button>
+value="ODESLAT"
+>
 </div>
     
 </form>
+</div>
 
+<div class="grid-contact__item">
+<h2> Pokud chcete mluvit přímo s námi, neváhejte nás kontaktovat.
+Jsme tu pro vás. </h2>
 
-<div class="contacts">
-<p> Pokud chcete mluvit přímo s námi, neváhejte nás kontaktovat.
-Jsme tu pro vás. </p>
+<h3>Dotazy ohledně produktu, objednávek, velkoobchod </h3>
+Anežka Šedová: <br>
+<a href="+420725477577">+420 725 477 577 </a> <br>
+<a href="mailto:anezka@farminc.cz">anezka@farminc.cz</a> 
 
-<p>Dotazy ohledně produktu, objednávek, velkoobchod <br>
-Anežka Šedová: +420 725 477 577 <br>
-anezka@farminc.cz</p> 
-
-<p>Fakturace <br>
+<h3>Fakturace</h3> 
 Kateřina Šedová <br>
-katerina@farminc.cz</p> 
+<a href="mailto:katerina@farminc.cz">katerina@farminc.cz</a> 
 
+</div>
 </div>
