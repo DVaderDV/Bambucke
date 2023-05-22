@@ -146,7 +146,6 @@ h3 {
   border: white 10px double;
   text-align: center;
   position: relative;
-  padding: 40px;
   color: white;
 }
 @media (min-width: 1200px) {
@@ -157,6 +156,7 @@ h3 {
   }
 }
 .article-about__title {
+  padding: 40px;
   justify-self: end;
 }
 @media (min-width: 1200px) {
@@ -178,10 +178,14 @@ h3 {
   }
 }
 .article-about__text {
-  margin: 20px;
   padding: 20px;
-  text-align: end;
+  text-align: justify;
   background-color: rgba(44, 65, 44, 0.5);
+}
+@media (min-width: 700px) {
+  .article-about__text {
+    margin: 20px;
+  }
 }
 
 /*--------------------------------------------------*/
@@ -218,6 +222,10 @@ h3 {
     gap: 20px;
     justify-content: center;
   }
+}
+
+.links__title {
+  margin: 20px;
 }
 
 .glide__slide img {

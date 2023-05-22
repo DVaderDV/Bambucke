@@ -1,0 +1,5 @@
+@use '../base/size';
+.links {
+    &__title{
+    margin: size.$spacer;
+}}
