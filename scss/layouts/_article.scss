@@ -15,7 +15,8 @@
             grid-template-rows: auto auto;
         }
         
-    &__origin{
+    &__origin,
+    &__certificates {
         background-color: colors.$background-article-info;
     }    
     &__types{
