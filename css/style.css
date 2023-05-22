@@ -289,7 +289,6 @@ h3 {
   .grid-products {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
-    justify-items: start;
   }
 }
 @media (min-width: 1200px) {
@@ -302,7 +301,7 @@ h3 {
   padding: 20px;
   margin: 20px;
   box-shadow: 2px 2px 5px rgb(212, 212, 212);
-  height: 450px;
+  height: 500px;
   width: 350px;
 }
 .grid-products__item img {
