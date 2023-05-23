@@ -14,11 +14,17 @@
         }
     }}
 .menu { 
+    @media (max-width:700px) {
+        position:absolute;
+        right: 10%;
+        top: -20px;
+        z-index: 9999;
+    }
     &__list {
         list-style: none;
         @media (max-width:700px) {
         display: none;
-        background-color: colors.$primary-color;
+        background-color: colors.$hamburger-color;
         margin: 0;
         padding: 0;
         }
@@ -40,7 +46,7 @@
             padding: size.$spacer;
             color: colors.$secondary-color;
             &:active {
-                background-color: #3e7064;
+                background-color: colors.$hamburger-active-color;
             }
         }
         @media (min-width:700px) {
@@ -65,6 +71,7 @@
     }
     &__toggler {
         font-family: fonts.$normal-font;
+        color: colors.$hamburger-color;
         padding: size.$spacer;
         @media (min-width:700px) {
             position: absolute;

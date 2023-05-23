@@ -492,13 +492,21 @@ label {
   height: 50px;
 }
 
+@media (max-width: 700px) {
+  .menu {
+    position: absolute;
+    right: 10%;
+    top: -20px;
+    z-index: 9999;
+  }
+}
 .menu__list {
   list-style: none;
 }
 @media (max-width: 700px) {
   .menu__list {
     display: none;
-    background-color: #60AB9A;
+    background-color: #42776b;
     margin: 0;
     padding: 0;
   }
@@ -524,7 +532,7 @@ label {
     color: white;
   }
   .menu__link:active {
-    background-color: #3e7064;
+    background-color: #24413a;
   }
 }
 @media (min-width: 700px) {
@@ -550,6 +558,7 @@ label {
 }
 .menu__toggler {
   font-family: libre baskerville;
+  color: #42776b;
   padding: 20px;
 }
 @media (min-width: 700px) {
