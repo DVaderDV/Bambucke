@@ -13,7 +13,9 @@
     object-fit: cover;
    
     &:hover {
+        @media (min-width:1200px) {
         transform: scale(1.2);
+        }
     }
     @media (min-width:1200px) {
         box-shadow: 2px 2px 5px rgb(212, 212, 212);

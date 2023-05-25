@@ -88,8 +88,10 @@ h3 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.item:hover {
-  transform: scale(1.2);
+@media (min-width: 1200px) {
+  .item:hover {
+    transform: scale(1.2);
+  }
 }
 @media (min-width: 1200px) {
   .item {
@@ -343,6 +345,7 @@ h3 {
   color: white;
 }
 .footer__grid {
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;

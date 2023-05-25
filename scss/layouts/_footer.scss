@@ -5,6 +5,7 @@
     background-color: colors.$footer-color;
     color: colors.$secondary-color;
     &__grid {
+        padding: size.$spacer;
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
