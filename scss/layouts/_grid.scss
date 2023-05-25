@@ -18,6 +18,7 @@
     }
    
     &__item{
+        position: relative;
         padding: size.$spacer;
         margin: size.$spacer;
         box-shadow: 2px 2px 5px rgb(212, 212, 212);
@@ -27,6 +28,11 @@
             width: auto;
             height: size.$imgproduct-size;
         }   
+        & .button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
     }
     &__title{
         justify-self: start;
