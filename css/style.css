@@ -80,10 +80,6 @@ h3 {
 
 .item {
   background-color: white;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   box-shadow: 2px 2px 5px rgb(212, 212, 212);
   border-radius: 10px;
   padding: 20px;
@@ -226,11 +222,6 @@ h3 {
 
 .links__title {
   margin: 20px;
-}
-
-.glide__slide img {
-  width: 500px;
-  height: auto;
 }
 
 .product-box {
@@ -566,4 +557,21 @@ label {
     position: absolute;
     right: -9999px;
   }
+}
+
+.detail-item {
+  align-items: center;
+}
+.detail-item__description {
+  margin: 20px;
+}
+@media (min-width: 700px) {
+  .detail-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.glide img {
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */

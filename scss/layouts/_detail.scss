@@ -1,0 +1,19 @@
+@use '../base/colors';
+@use '../base/size';
+@use '../base/fonts';
+
+.detail-item {
+  align-items: center;
+  &__description {
+    margin: size.$spacer;
+  }
+  @media (min-width:700px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+.glide {
+    & img {
+        width: size.$imgproduct-size*2;
+    }  
+}
