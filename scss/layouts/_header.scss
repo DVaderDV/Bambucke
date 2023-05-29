@@ -74,8 +74,9 @@
         color: colors.$hamburger-color;
         padding: size.$spacer;
         @media (min-width:700px) {
-            position: absolute;
-            right: -9999px;
+            /*position: absolute;
+            right: -9999px;*/
+            display: none;
         }
     }
     }

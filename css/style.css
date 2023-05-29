@@ -567,8 +567,9 @@ label {
 }
 @media (min-width: 700px) {
   .menu__toggler {
-    position: absolute;
-    right: -9999px;
+    /*position: absolute;
+    right: -9999px;*/
+    display: none;
   }
 }
 
