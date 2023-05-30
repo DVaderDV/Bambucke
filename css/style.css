@@ -40,6 +40,7 @@ h1 {
   font-family: kaushan script;
   color: #8AC926;
   line-height: 80px;
+  padding: 0 20px 0 20px;
 }
 
 h2 {
@@ -385,10 +386,6 @@ h3 {
   color: white;
 }
 
-.information {
-  border: #8AC926 10px double;
-}
-
 .article {
   position: relative;
   display: grid;
@@ -397,26 +394,26 @@ h3 {
 @media (min-width: 1200px) {
   .article {
     grid-template-columns: 1fr 600px;
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(2, auto);
   }
-}
-.article__origin, .article__certificates {
-  background-color: rgba(44, 65, 44, 0.8);
 }
 .article__types {
   background-image: url("/images/fancy/jake.png");
   background-size: cover;
 }
 .article__text {
-  color: white;
-  background-color: rgba(44, 65, 44, 0.8);
+  color: #24473f;
   padding: 20px;
+  margin: 20px;
 }
 @media (min-width: 1200px) {
   .article__text--left {
-    grid-column: 1/2;
-    grid-row: 1/-1;
+    grid-column: 1/-1;
   }
+}
+.article__text--right {
+  background-color: rgba(44, 65, 44, 0.8);
+  color: white;
 }
 @media (min-width: 1200px) {
   .article__text--right {
@@ -426,26 +423,23 @@ h3 {
 .article__title {
   padding: 20px;
 }
-.article__title--right {
-  background-color: rgba(44, 65, 44, 0.8);
-}
 .article__title--right h1 {
-  animation: move-fromright 3s;
+  animation: move-fromleft 3s;
 }
 @media (min-width: 1200px) {
   .article__title--right {
-    grid-column: 2/-1;
-    grid-row: 1/-1;
-  }
-  .article__title--right::after {
-    content: " ";
-    display: block;
-    width: 5px;
-    height: 100px;
-    background-image: linear-gradient(to right, #60AB9A, #8AC926);
-    position: absolute;
-    right: 600px;
-    top: 80px;
+    grid-column: 1/2;
+    justify-self: end;
+    /*  &::after {
+          content: " ";
+          display: block;
+          width: 5px;
+          height: 100px;
+          background-image:linear-gradient(to right, colors.$primary-color, colors.$special-color);
+          position: absolute;
+          right: 600px;
+          top: 80px;
+      }*/
   }
 }
 .article__title--left h1 {
@@ -459,8 +453,8 @@ h3 {
     height: 100px;
     background-image: linear-gradient(to right, #60AB9A, #8AC926);
     position: absolute;
-    left: 510px;
-    top: 60px;
+    left: 530px;
+    top: 75px;
   }
 }
 
@@ -488,6 +482,8 @@ label {
 }
 
 .header {
+  max-width: 1400px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -518,7 +514,6 @@ label {
 @media (min-width: 700px) {
   .menu__list {
     display: flex;
-    border-bottom: #8AC926 3px solid;
   }
 }
 @media (max-width: 700px) {
@@ -542,14 +537,13 @@ label {
 @media (min-width: 700px) {
   .menu__link {
     margin: 20px;
+    padding: 10px;
     color: #24473f;
     font-family: libre baskerville;
     text-decoration: none;
   }
   .menu__link:hover, .menu__link:active {
-    background-color: #8AC926;
-    border-radius: 50px;
-    padding: 10px;
+    border-bottom: #8AC926 3px solid;
   }
 }
 .menu__checkbox {
@@ -567,8 +561,6 @@ label {
 }
 @media (min-width: 700px) {
   .menu__toggler {
-    /*position: absolute;
-    right: -9999px;*/
     display: none;
   }
 }

@@ -1,5 +1,7 @@
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addPassthroughCopy("glide.min.js");
+
 	// Výchozí výstupní složka: _site
 
 	// Zkopírovat images/ do _site/images

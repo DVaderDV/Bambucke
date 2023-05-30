@@ -27,10 +27,14 @@
   </div>
   {% include 'partials/footer.njk' %}
 
-  <script src="glide.min.js"></script>
+  <script src="/glide.min.js"></script>
 
   <script>
-    new Glide('.glide').mount()
+    new Glide('.glide',{
+      type: 'carousel',
+      autoplay: 2000,
+      hoverpause: false
+    }).mount()
   </script>
   
     </body>
