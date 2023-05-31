@@ -430,16 +430,16 @@ h3 {
   .article__title--right {
     grid-column: 1/2;
     justify-self: end;
-    /*  &::after {
-          content: " ";
-          display: block;
-          width: 5px;
-          height: 100px;
-          background-image:linear-gradient(to right, colors.$primary-color, colors.$special-color);
-          position: absolute;
-          right: 600px;
-          top: 80px;
-      }*/
+    /* &::after {
+    content: " ";
+    display: block;
+    width: 5px;
+    height: 100px;
+    background-image:linear-gradient(to right, colors.$primary-color, colors.$special-color);
+    position: absolute;
+    right: 600px;
+    top: 80px;
+    }*/
   }
 }
 .article__title--left h1 {
@@ -574,7 +574,7 @@ label {
 @media (min-width: 700px) {
   .detail-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 500px 1fr;
   }
 }
 
