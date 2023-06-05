@@ -9,7 +9,7 @@
     text-align: center;
     margin: size.$spacer;
     &__link {
-        color: colors.$normal-text-color;
+        color: colors.$secondary-color;
         font-size: fonts.$button-font-size;
         font-weight: bold;
         text-decoration: none;
@@ -18,7 +18,7 @@
         padding: size.$spacer /2;
     &:active,
     &:hover {
-        background-color: colors.$special-color;
+        background-color: colors.$active-color;
         padding: size.$spacer / 2;
         transform: scale(1.2);
         }

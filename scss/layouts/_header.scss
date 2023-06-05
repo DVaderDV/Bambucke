@@ -47,7 +47,7 @@
             padding: size.$spacer;
             color: colors.$secondary-color;
             &:active {
-                background-color: colors.$hamburger-active-color;
+                background-color:  colors.$active-color;
             }
         }
         @media (min-width:700px) {

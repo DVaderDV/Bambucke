@@ -40,8 +40,10 @@ h2 {
     color: colors.$primary-color;
     font-size: fonts.$font-size-h2;
     line-height: fonts.$line-height-normal-text;
+    padding: size.$spacer;
 }
 
 h3 {
     font-size: fonts.$font-size-special;
+    margin: 0;
 }

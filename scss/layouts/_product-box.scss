@@ -20,7 +20,7 @@
     }
 &__headtitle {
     @media (min-width:1200px) {
-        &::after {
+        /*&::after {
             content: " ";
             display: block;
             width: 700px;
@@ -29,7 +29,7 @@
             position: absolute;
             left: 10px;
             top: 140px;
-            }
+            }*/
     }
     @media (min-width: 1200px) {
         grid-row: 1;
