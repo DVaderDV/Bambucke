@@ -29,7 +29,8 @@
         text-align: center;
     &__text {
         animation: move-fromright 3s;
-        background-color: rgb(184, 179, 179, 0.5);
+        background-color: rgba(204, 199, 199, 0.8);
+        display: inline-block;
     }
     /*&__img {
         grid-row: 2 / -1;
